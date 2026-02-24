@@ -45,8 +45,11 @@ jobs:
             --output-path docs \
             --hosting-base-path SwiftUIDesignSystem
 
-          ls docs
-
+          echo "=== Contents of docs directory ==="
+          ls -la docs/
+          
+          echo "=== First 50 lines of index.html ==="
+          head -n 50 docs/index.html
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
