@@ -43,7 +43,7 @@ jobs:
           xcrun docc process-archive transform-for-static-hosting \
             "$DOCC_ARCHIVE" \
             --output-path docs \
-            --hosting-base-path "${{ github.event.repository.name }}"
+            --hosting-base-path SwiftUIDesignSystem
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
