@@ -45,6 +45,8 @@ jobs:
             --output-path docs \
             --hosting-base-path /SwiftUIDesignSystem
 
+          ls docs
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
