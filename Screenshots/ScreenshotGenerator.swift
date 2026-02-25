@@ -22,7 +22,7 @@ struct ScreenshotGenerator {
     private let fileManager = FileManager.default
     
     init(baseDirectory: String = "") {
-        var resourcesURL = URL(filePath: "/Users/jake/Developer/Apple Design System/Apple Design System/Documentation.docc/Resources/")
+        var resourcesURL = URL(filePath: "/Users/jake/Developer/SwiftUIDesignSystem/SwiftUIDesignSystem/Documentation.docc/Resources/")
         if !baseDirectory.isEmpty {
             resourcesURL.append(path: "\(baseDirectory)/")
         }

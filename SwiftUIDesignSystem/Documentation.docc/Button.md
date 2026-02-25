@@ -1,4 +1,4 @@
-#  Button
+# Button
 
 A control that initiates an action.
 

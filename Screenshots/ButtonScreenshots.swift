@@ -32,7 +32,58 @@ struct ButtonScreenshots {
         try await generator.generateScreenshots(of: plain, fileName: "plain")
     }
     
-    @Test func content() throws {
+    @Test func content() async throws {
+        let title = Button("Title") {}
+            .buttonStyle(.borderedProminent)
         
+        let titleSymbol = Button("Title", systemImage: "questionmark.square.dashed") {}
+            .buttonStyle(.borderedProminent)
+        
+        let symbol = Button("Title", systemImage: "questionmark.square.dashed") {}
+            .buttonStyle(.borderedProminent)
+            .labelStyle(.iconOnly)
+        
+        try await generator.generateScreenshots(of: title, fileName: "title")
+        try await generator.generateScreenshots(of: titleSymbol, fileName: "titleSymbol")
+        try await generator.generateScreenshots(of: symbol, fileName: "symbol")
+    }
+    
+    @Test func sizes() async throws {
+        let base = Button("Title") {}
+            .buttonStyle(.borderedProminent)
+        
+        try await generator.generateScreenshots(of: base.controlSize(.small), fileName: "small")
+        try await generator.generateScreenshots(of: base.controlSize(.regular), fileName: "regular")
+        try await generator.generateScreenshots(of: base.controlSize(.large), fileName: "large")
+        try await generator.generateScreenshots(of: base.buttonSizing(.flexible), fileName: "fullWidth")
+    }
+    
+    @Test func borderShapes() async throws {
+        let base = Button("Title") {}
+            .buttonStyle(.borderedProminent)
+
+        try await generator.generateScreenshots(of: base.buttonBorderShape(.capsule), fileName: "capsule")
+        try await generator.generateScreenshots(of: base.buttonBorderShape(.roundedRectangle), fileName: "roundedRect")
+        try await generator.generateScreenshots(of: base.buttonBorderShape(.roundedRectangle(radius: 12)), fileName: "roundedRectRadius")
+        
+        let circle = Button("Title", systemImage: "questionmark.square.dashed") {}
+            .buttonStyle(.borderedProminent)
+            .labelStyle(.iconOnly)
+            .buttonBorderShape(.circle)
+        
+        try await generator.generateScreenshots(of: circle, fileName: "circle")
+    }
+    
+    @Test func tint() async throws {
+        let button = Button("Title") {}
+            .buttonStyle(.borderedProminent)
+            .tint(.green)
+        try await generator.generateScreenshots(of: button, fileName: "tint")
+    }
+    
+    @Test func roles() async throws {
+        let button = Button("Delete", role: .destructive) {}
+            .buttonStyle(.borderedProminent)
+        try await generator.generateScreenshots(of: button, fileName: "destructive")
     }
 }
