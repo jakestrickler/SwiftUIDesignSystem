@@ -86,4 +86,19 @@ struct ButtonScreenshots {
             .buttonStyle(.borderedProminent)
         try await generator.generateScreenshots(of: button, fileName: "destructive")
     }
+    
+    @Test func modifiedStyle() async throws {
+        struct PrimaryButtonStyle: PrimitiveButtonStyle {
+            func makeBody(configuration: Configuration) -> some View {
+                Button(configuration)
+                    .buttonStyle(.borderedProminent)
+                    .buttonBorderShape(.roundedRectangle)
+                    .bold()
+            }
+        }
+        
+        let button = Button("Title", systemImage: "questionmark.square.dashed") {}
+            .buttonStyle(PrimaryButtonStyle())
+        try await generator.generateScreenshots(of: button, fileName: "modifiedStyle")
+    }
 }

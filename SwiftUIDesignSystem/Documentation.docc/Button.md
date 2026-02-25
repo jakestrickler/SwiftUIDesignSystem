@@ -46,3 +46,85 @@ Button("Title") {
 ```
 
 ![](button-borderless)
+
+## Content
+
+### Title
+
+```swift
+Button("Title") {
+    // perform action...
+}
+.buttonStyle(.borderedProminent)
+```
+
+![](button-title)
+
+### Title and Symbol
+
+```swift
+Button("Title", systemImage: "questionmark.square.dashed") {
+    // perform action...
+}
+.buttonStyle(.borderedProminent)
+```
+
+![](button-titleSymbol)
+
+### Symbol
+
+```swift
+Button("Title", systemImage: "questionmark.square.dashed") {
+    // perform action...
+}
+.buttonStyle(.borderedProminent)
+.labelStyle(.iconOnly)
+```
+
+![](button-symbol)
+
+## Sizes
+
+```swift
+Button("Title") {
+    // perform action...
+}
+.buttonStyle(.borderedProminent)
+.controlSize(.small)
+```
+
+| Size | Preview |
+| ---- | ------- |
+| [small]() | ![](button-small) |
+| [regular]() | ![](button-regular) |
+| [large]() | ![](button-large) |
+
+## Border Shapes
+
+| Shape | Preview |
+| ----- | ------- |
+| [capsule]() | ![](button-capsule) |
+| [roundedRect]() | ![](button-roundedRect) |
+| [roundedRect(radius:)]() | ![](button-roundedRectRadius) |
+| [circle]() | ![](button-circle)
+
+## Tints and Roles
+
+```swift
+Button("Delete", role: .destructive) {}
+    .buttonStyle(.borderedProminent)
+```
+
+![](button-destructive)
+
+```swift 
+Button("Title") {}
+    .buttonStyle(.borderedProminent)
+    .tint(.green)
+```
+
+![](button-tint)
+
+## Modifying the Styles
+
+If your app 
