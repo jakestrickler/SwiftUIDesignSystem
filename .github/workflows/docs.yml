@@ -28,7 +28,7 @@ jobs:
 
       - name: Build DocC Archive
         run: |
-          xcrun docc convert Documentation.docc --output-path Docs.doccarchiv
+          xcrun docc convert Documentation.docc --output-path Docs.doccarchive
 
       - name: Transform DocC archive for static hosting
         run: |
