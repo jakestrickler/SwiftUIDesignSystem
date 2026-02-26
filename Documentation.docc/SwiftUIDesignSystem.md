@@ -1,4 +1,4 @@
-# ``SwiftUIDesignSystem``
+# SwiftUIDesignSystem
 
 Summary
 
