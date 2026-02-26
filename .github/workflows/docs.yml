@@ -28,28 +28,14 @@ jobs:
 
       - name: Build DocC Archive
         run: |
-          xcodebuild docbuild \
-            -scheme SwiftUIDesignSystem \
-            -destination 'generic/platform=iOS' \
-            -derivedDataPath DerivedData \
-            CODE_SIGNING_ALLOWED=NO \
-            CODE_SIGNING_REQUIRED=NO \
-            CODE_SIGN_IDENTITY=""
+          xcrun docc convert Documentation.docc --output-path Docs.doccarchiv
 
       - name: Transform DocC archive for static hosting
         run: |
-          DOCC_ARCHIVE=$(find DerivedData -name "*.doccarchive" | head -n 1)
-
-          xcrun docc process-archive transform-for-static-hosting \
-            "$DOCC_ARCHIVE" \
+          xcrun docc process-archive \
+            transform-for-static-hosting Docs.doccarchive \
             --output-path docs \
-            --hosting-base-path SwiftUIDesignSystem
-
-          echo "=== Contents of docs directory ==="
-          ls -la docs/
-          
-          echo "=== First 50 lines of index.html ==="
-          head -n 50 docs/index.html
+            --hosting-base-path /SwiftUIDesignSystem
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
