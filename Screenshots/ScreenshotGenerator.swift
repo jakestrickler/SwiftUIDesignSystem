@@ -32,7 +32,6 @@ struct ScreenshotGenerator {
     func generateScreenshots<Content: View>(of view: Content, fileName: String) async throws {
         try await MainActor.run {
             if !fileManager.fileExists(atPath: outputDirectory.path(percentEncoded: false)) {
-                print("***", fileName)
                 try fileManager.createDirectory(at: outputDirectory, withIntermediateDirectories: false)
             }
             

@@ -6,28 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		232F1E152F50941100C99330 /* Documentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = 232F1E0E2F50941100C99330 /* Documentation.docc */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
-		232F1CE72F4E34EE00C99330 /* PBXContainerItemProxy */ = {
+		232F1E262F5099A000C99330 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 232F1CB62F4E343C00C99330 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 232F1CBD2F4E343C00C99330;
-			remoteInfo = SwiftUIDesignSystem;
+			remoteInfo = Demo;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		232F1CBE2F4E343C00C99330 /* SwiftUIDesignSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDesignSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		232F1CE32F4E34EE00C99330 /* Screenshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Screenshots.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		232F1CBE2F4E343C00C99330 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		232F1E0E2F50941100C99330 /* Documentation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Documentation.docc; sourceTree = "<group>"; };
+		232F1E222F5099A000C99330 /* Screenshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Screenshots.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		232F1CC02F4E343C00C99330 /* SwiftUIDesignSystem */ = {
+		232F1CC02F4E343C00C99330 /* Demo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SwiftUIDesignSystem;
+			path = Demo;
 			sourceTree = "<group>";
 		};
-		232F1CE42F4E34EE00C99330 /* Screenshots */ = {
+		232F1E232F5099A000C99330 /* Screenshots */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Screenshots;
 			sourceTree = "<group>";
@@ -42,7 +47,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		232F1CE02F4E34EE00C99330 /* Frameworks */ = {
+		232F1E1F2F5099A000C99330 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -55,8 +60,9 @@
 		232F1CB52F4E343C00C99330 = {
 			isa = PBXGroup;
 			children = (
-				232F1CC02F4E343C00C99330 /* SwiftUIDesignSystem */,
-				232F1CE42F4E34EE00C99330 /* Screenshots */,
+				232F1E0E2F50941100C99330 /* Documentation.docc */,
+				232F1CC02F4E343C00C99330 /* Demo */,
+				232F1E232F5099A000C99330 /* Screenshots */,
 				232F1CBF2F4E343C00C99330 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,8 +70,8 @@
 		232F1CBF2F4E343C00C99330 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				232F1CBE2F4E343C00C99330 /* SwiftUIDesignSystem.app */,
-				232F1CE32F4E34EE00C99330 /* Screenshots.xctest */,
+				232F1CBE2F4E343C00C99330 /* Demo.app */,
+				232F1E222F5099A000C99330 /* Screenshots.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,9 +79,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		232F1CBD2F4E343C00C99330 /* SwiftUIDesignSystem */ = {
+		232F1CBD2F4E343C00C99330 /* Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 232F1CC92F4E343D00C99330 /* Build configuration list for PBXNativeTarget "SwiftUIDesignSystem" */;
+			buildConfigurationList = 232F1CC92F4E343D00C99330 /* Build configuration list for PBXNativeTarget "Demo" */;
 			buildPhases = (
 				232F1CBA2F4E343C00C99330 /* Sources */,
 				232F1CBB2F4E343C00C99330 /* Frameworks */,
@@ -86,36 +92,36 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				232F1CC02F4E343C00C99330 /* SwiftUIDesignSystem */,
+				232F1CC02F4E343C00C99330 /* Demo */,
 			);
-			name = SwiftUIDesignSystem;
+			name = Demo;
 			packageProductDependencies = (
 			);
 			productName = SwiftUIDesignSystem;
-			productReference = 232F1CBE2F4E343C00C99330 /* SwiftUIDesignSystem.app */;
+			productReference = 232F1CBE2F4E343C00C99330 /* Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		232F1CE22F4E34EE00C99330 /* Screenshots */ = {
+		232F1E212F5099A000C99330 /* Screenshots */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 232F1CE92F4E34EE00C99330 /* Build configuration list for PBXNativeTarget "Screenshots" */;
+			buildConfigurationList = 232F1E282F5099A000C99330 /* Build configuration list for PBXNativeTarget "Screenshots" */;
 			buildPhases = (
-				232F1CDF2F4E34EE00C99330 /* Sources */,
-				232F1CE02F4E34EE00C99330 /* Frameworks */,
-				232F1CE12F4E34EE00C99330 /* Resources */,
+				232F1E1E2F5099A000C99330 /* Sources */,
+				232F1E1F2F5099A000C99330 /* Frameworks */,
+				232F1E202F5099A000C99330 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				232F1CE82F4E34EE00C99330 /* PBXTargetDependency */,
+				232F1E272F5099A000C99330 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				232F1CE42F4E34EE00C99330 /* Screenshots */,
+				232F1E232F5099A000C99330 /* Screenshots */,
 			);
 			name = Screenshots;
 			packageProductDependencies = (
 			);
 			productName = Screenshots;
-			productReference = 232F1CE32F4E34EE00C99330 /* Screenshots.xctest */;
+			productReference = 232F1E222F5099A000C99330 /* Screenshots.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -131,7 +137,7 @@
 					232F1CBD2F4E343C00C99330 = {
 						CreatedOnToolsVersion = 26.2;
 					};
-					232F1CE22F4E34EE00C99330 = {
+					232F1E212F5099A000C99330 = {
 						CreatedOnToolsVersion = 26.2;
 						TestTargetID = 232F1CBD2F4E343C00C99330;
 					};
@@ -151,8 +157,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				232F1CBD2F4E343C00C99330 /* SwiftUIDesignSystem */,
-				232F1CE22F4E34EE00C99330 /* Screenshots */,
+				232F1CBD2F4E343C00C99330 /* Demo */,
+				232F1E212F5099A000C99330 /* Screenshots */,
 			);
 		};
 /* End PBXProject section */
@@ -165,7 +171,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		232F1CE12F4E34EE00C99330 /* Resources */ = {
+		232F1E202F5099A000C99330 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -179,10 +185,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				232F1E152F50941100C99330 /* Documentation.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		232F1CDF2F4E34EE00C99330 /* Sources */ = {
+		232F1E1E2F5099A000C99330 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -192,10 +199,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		232F1CE82F4E34EE00C99330 /* PBXTargetDependency */ = {
+		232F1E272F5099A000C99330 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 232F1CBD2F4E343C00C99330 /* SwiftUIDesignSystem */;
-			targetProxy = 232F1CE72F4E34EE00C99330 /* PBXContainerItemProxy */;
+			target = 232F1CBD2F4E343C00C99330 /* Demo */;
+			targetProxy = 232F1E262F5099A000C99330 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -404,7 +411,7 @@
 			};
 			name = Release;
 		};
-		232F1CEA2F4E34EE00C99330 /* Debug */ = {
+		232F1E292F5099A000C99330 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -425,12 +432,12 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUIDesignSystem.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftUIDesignSystem";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Demo";
 				XROS_DEPLOYMENT_TARGET = 26.2;
 			};
 			name = Debug;
 		};
-		232F1CEB2F4E34EE00C99330 /* Release */ = {
+		232F1E2A2F5099A000C99330 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -451,7 +458,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUIDesignSystem.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftUIDesignSystem";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Demo";
 				XROS_DEPLOYMENT_TARGET = 26.2;
 			};
 			name = Release;
@@ -468,7 +475,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		232F1CC92F4E343D00C99330 /* Build configuration list for PBXNativeTarget "SwiftUIDesignSystem" */ = {
+		232F1CC92F4E343D00C99330 /* Build configuration list for PBXNativeTarget "Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				232F1CCA2F4E343D00C99330 /* Debug */,
@@ -477,11 +484,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		232F1CE92F4E34EE00C99330 /* Build configuration list for PBXNativeTarget "Screenshots" */ = {
+		232F1E282F5099A000C99330 /* Build configuration list for PBXNativeTarget "Screenshots" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				232F1CEA2F4E34EE00C99330 /* Debug */,
-				232F1CEB2F4E34EE00C99330 /* Release */,
+				232F1E292F5099A000C99330 /* Debug */,
+				232F1E2A2F5099A000C99330 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
